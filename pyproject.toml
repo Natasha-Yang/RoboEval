@@ -11,7 +11,7 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-  "gymnasium @ git+https://git@github.com/stepjam/Gymnasium.git@0.29.2",
+  "gymnasium==0.29.1",
   "numpy==1.26.*",
   "safetensors==0.4.3",
   "mujoco==3.3.3",
