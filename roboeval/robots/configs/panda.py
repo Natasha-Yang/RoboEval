@@ -51,6 +51,18 @@ CAMERA_CONFIG = {
         "quaternion": (0, 1, 0, 0),
         "fov": 60,
     },
+    "front": {
+        "manual": True,
+        "parent": "invisible_base",
+        # Place the camera on the far side of the table (positive X), a bit further back and
+        # slightly higher so it looks down at the robot/table. The quaternion below orients
+        # the camera to face toward the origin (robot) with a small downward tilt.
+        "position": (1.4, 0, 1.6),
+        # Quaternion (w, x, y, z). This gives a frontal view pointing toward -X with a
+        # modest downward pitch. Tweak the values or the Z position to raise/lower tilt.
+        "quaternion": (0.6124, 0.3536, 0.3536, 0.6124),
+        "fov": 80,
+    },
 }
 
 CAMERA_CONFIG_SINGLE = {
